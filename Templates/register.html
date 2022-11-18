@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almond</title>
+    <link rel="stylesheet" href="../Static/style1.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="{{url_for('index')}}"><div>Home</div></a></li>
+            <li><a href=""><div>About Us</div></a></li>
+            <li><a href=""><div>Shop</div></a></li>
+            <li><a href=""><div>Contact Us</div></a></li>
+        </ul>
+        <a href="{{url_for('index')}}" class="mainname"><h1>ALMOND</h1></a>
+        <div class="shopnow">
+                <a href="{{url_for('loggin')}}">
+                    <div>
+                        <h2>Log in</h2>
+                    </div>
+                </a>
+            <a href="{{url_for('signup')}}">
+                <div>
+                    <h2>Sign Up</h2>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="maincontent loginer">
+        <div class="register">
+            <form action="/register" method="POST">
+                <h2>Name</h2>
+                <input name="login" type="text">
+                <h2>Password</h2>
+                <input name="password" type="password">
+                <input style="margin-top: 40px;" type="submit" value="Зарегистрироваться">
+            </form>
+            <div>{{error}}</div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="add">
+            <div>
+                <h2>КОМПАНИЯ</h2>
+                <a href="#"><h3>Контакты</h3></a>
+                <a href="#"><h3>Реквизиты</h3></a>
+                <a href="#"><h3>О нас</h3></a>
+                <a href="#"><h3>Условия пользования</h3></a>
+                <a href="#"><h3>Политика</h3></a>
+            </div>
+            <div>
+                <h2>СОЦИАЛЬНЫЕ СЕТИ</h2>
+                <a href="https://www.instagram.com/almond_bakery_/" target="_blank"><h3>Instagram</h3></a>
+            </div>
+            <div>
+                <h2>МАГАЗИНЫ</h2>
+                <a href="#"><h3>Магазин 1</h3></a>
+                <a href="#"><h3>Магазин 2</h3></a>
+                <a href="#"><h3>Магазин 3</h3></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
